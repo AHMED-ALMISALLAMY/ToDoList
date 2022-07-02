@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <style>
+        div
+        {
+            margin-bottom: 10px;
+        }
+        input , textarea , select
+        {
+            width: 100%;
+        }
+        .Law
+        {
+            background-color: darkturquoise;
+            height: 20px;
+            width: 100%;
+        }
+        .Medium
+        {
+            background-color: rgb(8, 77, 73);
+            height: 20px;
+            width: 100%;
+        }
+        .Hight
+        {
+            background-color: rosybrown;
+            height: 20px;
+            width: 100%;
+        }
+        .Hightest
+        {
+            background-color: red;
+            height: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 48%; float: left;">
+        <form>
+            <div>
+                <input id="taskName" placeholder="Task Name"/>
+            </div>
+        <div>
+            <select id="optionsSelector">
+                <option value="">Select</option>
+                <option class="Law" value="1">Law</option>
+                <option class="Medium" value="2">Medim</option>
+                <option class="Hight" value="3">High</option>
+                <option class="Hightest" value="4">Highest</option>
+            </select>
+        </div>
+            <div>
+                <input id="inputDate" type="date" placeholder="Reminder Date"/>
+            </div>
+            <div>
+                <textarea id="textArea" placeholder="Task Description"></textarea>
+            </div>
+            <div>
+                <input id="btnSave" type="button" value="Save" />
+            </div>
+        </form>
+    </div>
+    <div id="TaskContainer" style="width: 48%; float: left;">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
